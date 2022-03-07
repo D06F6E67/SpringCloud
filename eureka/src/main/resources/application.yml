@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 8700
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 自身不向eureka注册
+    register-with-eureka: false
+    # 启动时禁用client注册
+    fetch-registry: false
